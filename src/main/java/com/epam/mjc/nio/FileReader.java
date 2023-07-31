@@ -26,7 +26,7 @@ public class FileReader {
                 data.put(line[0], line[1]);
             }
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         String name = data.get("Name");
         Integer age = Integer.parseInt(data.get("Age"));
